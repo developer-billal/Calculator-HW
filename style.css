@@ -1,0 +1,129 @@
+/*
+Background-color:    #D6D6D6
+calculator BG color:  #f0f0f0
+font-color: #000100
+clancel btn bg: #EC0200;
+operation btn BG: #000002;
+Cal width: 300px;
+Calc height: 500px;
+body BG : #D6D6D6
+*/
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ecf0f3;
+}
+
+.calculator{
+    margin: 0;
+    padding: 0;
+    background: #ecf0f3;
+    width: 300px;
+    height: 450px;
+    margin-top: 50px;
+    box-shadow: 10px 10px 15px #cbced1,
+                -10px -10px 15px white;
+    border-radius: 10px;
+}
+
+.display input{
+    border: none;
+    outline: none;
+    background: none;
+    color: #555;
+    padding: 20px 8px 20px 8px;
+    width: 90%;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.display{
+  width: 70%;
+  margin: 30px auto;
+  margin:40px auto;
+  box-shadow:inset 2px 2px 2px #cbced1,
+               inset -3px -3px 6px white;
+}
+
+
+table{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+
+table tr{
+ display: inline-block;
+ overflow: hidden;
+ margin-bottom: 10px;
+ width: 100%;
+ margin-left: 5px;
+}
+
+table tr td{
+    width: 54px;
+    height: 54px;
+}
+
+
+button, .equalBtn div{
+    display: inline-block;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+    margin-left: 3px;
+    box-shadow: 3px 3px 6px #cbced1,
+                -3px -3px 6px rgb(255, 255, 255);
+    border: none;
+    padding: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+table tr td.operatorBtn button{
+    background: rgb(66, 57, 57);
+    color: #fff;
+}
+
+table tr td.multiBtn button{
+   line-height: 200%;
+}
+
+table tr td.operatorBtn button:hover{
+    background: rgb(8, 8, 8);
+    color: #fff;
+}
+
+table tr td.cancelBtn button{
+    background: rgb(202, 20, 20);
+    color: #fff;
+}
+
+table tr td.cancelBtn button:hover{
+    background: rgb(240, 6, 6);
+    color: #fff;
+}
+
+button:hover{
+    background: #fff;
+}
+
+::placeholder{
+    opacity: 0.5;
+}
+
+.equalBtn div{
+  width: 33px;
+  height: 33px;
+  text-align: center;
+  line-height: 160%;
+}
+
+.equalBtn div:hover{
+    background: #fff;
+  }
